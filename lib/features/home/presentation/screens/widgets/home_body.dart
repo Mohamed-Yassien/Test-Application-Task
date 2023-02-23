@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:test_application/core/app_strings.dart';
 
-import '../../../../../core/app_strings.dart';
 
+/// home screen body
 class HomeBody extends StatelessWidget {
+  /// home body constructor
   const HomeBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return  const Center(
       child: Text(
         AppStrings.homeScreenText,
-        style: const TextStyle(
+        style:  TextStyle(
           fontSize: 35,
           fontWeight: FontWeight.bold,
         ),
